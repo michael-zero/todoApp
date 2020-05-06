@@ -16,6 +16,7 @@ export default function AddTodo({submitHandler}){
            
             clearButtonMode="always"
             style={styles.input}
+            value={text}
             placeholder="nova atividade"
             onChangeText={changeHandler}
             />
@@ -23,7 +24,7 @@ export default function AddTodo({submitHandler}){
             <Button  title='cadastrar' color='coral'
              onPress={() => {
                  submitHandler(text);
-                 
+                 setText(" ");
 
                 
              }}
